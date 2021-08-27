@@ -13,3 +13,10 @@ for d in data:
 	sum_len = sum_len + len(d) # sum_len += len(d)
 
 print('average comment len is', sum_len / len(data))
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print(len(new), 'comments its length are less than 100 ')
+print(new[1])
